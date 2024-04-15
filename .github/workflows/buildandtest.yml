@@ -15,7 +15,7 @@ jobs:
       - name: Spell Check this file for Typos
         uses: crate-ci/typos@master
         with: 
-          files: /.github/workflows/buildandtest.yml
+          files: .github/workflows/buildandtest.yml
         
         
       - name: Super-linter
