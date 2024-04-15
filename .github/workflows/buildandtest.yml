@@ -19,6 +19,13 @@ jobs:
         uses: actions/setup-dotnet@v2
         with:
           dotnet-version: 7.0.x
+            
+      - name: Super-linter
+        uses: super-linter/super-linter@v6.3.1  # x-release-please-version
+        env:
+          # To report GitHub Actions status checks
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_CSHARP : true
 
       - name: Install dependencies
         run: dotnet restore src/RestClient.Net.sln
@@ -26,6 +33,8 @@ jobs:
       - name: Build
         run: dotnet build src/RestClient.Net.sln --no-restore
 
+
+          
 
       - name: Test on .NET 7
         run: dotnet test src/RestClient.Net.UnitTests --no-build --verbosity normal --framework net7.0        
