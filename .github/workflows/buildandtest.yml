@@ -12,6 +12,9 @@ jobs:
 
     steps: 
       - uses: actions/checkout@v3
+      - name: Spell Check with Typos
+        uses: crate-ci/typos@master
+        
       - name: Super-linter
         uses: super-linter/super-linter@v5.7.2
         env: 
