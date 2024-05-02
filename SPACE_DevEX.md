@@ -2,21 +2,21 @@
 
 ## DevExperience
 - **Estado del Flujo**:
-	- Por un lado ya que es un proyecto que lo mantiene una sola persona se puede ver que el flujo de trabajo es constante y no hay interrupciones. Sin embargo, las organizaciones generalmente ponen friccion en el flujo para asegurar ciertos est·ndares de calidad y seguridad. En este caso, el desarrollador es el unico que revisa y autoriza sus propios PR y esto resulta en una falta de revision por pares.
-	- Por otro lado al priorizar un flujo r·pido se termina obteniendo uno mas lento por las deudas tecnicas generadas por la falta de revision por pares y la falta de documentacion.
+	- Por un lado ya que es un proyecto que lo mantiene una sola persona se puede ver que el flujo de trabajo es constante y no hay interrupciones. Sin embargo, las organizaciones generalmente ponen friccion en el flujo para asegurar ciertos est√°ndares de calidad y seguridad. En este caso, el desarrollador es el unico que revisa y autoriza sus propios PR y esto resulta en una falta de revision por pares.
+	- Por otro lado al priorizar un flujo r√°pido se termina obteniendo uno mas lento por las deudas tecnicas generadas por la falta de revision por pares y la falta de documentacion.
 - **Ciclos de Retroalimentacion**:
-	- El cÛdigo es de un proyecto pequeÒo y se corre y de despliega r·pido y da retroalimentacion rapida.
-	- Sin embargo, otras fuentes de retroalimentacion r·pidas como son el IDE, los flujos dentro de Github son ignorados a proposito lo cual compromete las respuestas de los sistemas automatizados.
+	- El c√≥digo es de un proyecto peque√±o y se corre y de despliega r√°pido y da retroalimentacion rapida.
+	- Sin embargo, otras fuentes de retroalimentacion r√°pidas como son el IDE, los flujos dentro de Github son ignorados a proposito lo cual compromete las respuestas de los sistemas automatizados.
 - **Carga Cognitiva**:
-	- Se puede ver que esta parte tambien necesita mejora pues directamente hay lineas de cÛdigo que el mismo desarrollador no sabe que hacen. 
-	- Los analizadores de codigo descubrieron una alta complejidad en la lÛgica principalmente porque se le est· intentando dar soporte a versiones antiguas de .net lo cual compromente altamente la legibilidad.
-	- La falta de documentaciÛn tambien aumenta la carga cognitiva pues el desarrollador tiene que recordar todo lo que ha hecho y no puede consultar la documentacion.
+	- Se puede ver que esta parte tambien necesita mejora pues directamente hay lineas de c√≥digo que el mismo desarrollador no sabe que hacen. 
+	- Los analizadores de codigo descubrieron una alta complejidad en la l√≥gica principalmente porque se le est√° intentando dar soporte a versiones antiguas de .net lo cual compromente altamente la legibilidad.
+	- La falta de documentaci√≥n tambien aumenta la carga cognitiva pues el desarrollador tiene que recordar todo lo que ha hecho y no puede consultar la documentacion.
 
 
 ## SPACE Framework
 El Framework de space fue creado dado que la productividada es multidimensional y no se puede medir con una sola metrica. Asi que se identificaron 5 dimensiones con las que vamos a analizar este proyecto.
 - **Safisfaccion y Bienestar**: Un desarrollador con baja satisfaccion indica posible Burnout y baja productividad.
-	- En este proyecto se pueden ver sintomas pues el desarrollador no actualiza el proyecto hace mas de un aÒo ni responde a los issues cuando hay problemas y mejoras muy aparentes.
+	- En este proyecto se pueden ver sintomas pues el desarrollador no actualiza el proyecto hace mas de un a√±o ni responde a los issues cuando hay problemas y mejoras muy aparentes.
 - **Performance**: 
 	- La caliad de codigo es baja y hace falta mucha documentacion. El impacto por el otro lado es alto pues es una libreria muy usada con hasta 10mil descargas totales.
 - **Actividad**:
@@ -36,3 +36,4 @@ El Framework de space fue creado dado que la productividada es multidimensional 
 - Se recomienda que el desarrollador busque ayuda para mantener el proyecto o que lo archive si no puede mantenerlo.
 - Tambien se recomienda volver el proyecto verdaderamente open source para poder mejorar la comunicacion, colaboracion y posiblemente conseguir algun sponsor.
 - Para poder lograr un mejor analisis segun el framework de SPACE se recomienda medir las exeriencias subjetivas de los colaboradores y usuarios del proyecto pues puede proveer mejor informacion sobre la satisfaccion y bienestar del desarrollador y la calidad del trabajo.
+

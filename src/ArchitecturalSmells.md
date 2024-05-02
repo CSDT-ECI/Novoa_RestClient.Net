@@ -1,4 +1,4 @@
-# An·lisis de Deuda de Arquitectura
+# An√°lisis de Deuda de Arquitectura
 
 
 ## Analisis general usando Designite para C#
@@ -24,10 +24,10 @@
 
 ## Architecture Smells
 - **Feature Concentration**: 4
-	- La herramienta detectÛ el problema en este componente porque el componente realiza m·s de una preocupaciÛn/caracterÌstica arquitectÛnica.
+	- La herramienta detect√≥ el problema en este componente porque el componente realiza m√°s de una preocupaci√≥n/caracter√≠stica arquitect√≥nica.
 
 ## Otras metricas detectadas por Designite
-- Hay un namespace duplicado llamado "RestClient.net" sin una distinciÛn aparente de su proposito. Otra herramienta de Estructura de matrices de dependencias detectÛ 5 repeticiones del mismo namespace, lo cual hace dificil de leer y apartar los resultados.
+- Hay un namespace duplicado llamado "RestClient.net" sin una distinci√≥n aparente de su proposito. Otra herramienta de Estructura de matrices de dependencias detect√≥ 5 repeticiones del mismo namespace, lo cual hace dificil de leer y apartar los resultados.
 - Los dos RestClients aportan una gran cantidad de architecture smells con 1,34 y 1,44 unidades de smell por KLOC. Y entran en la categoria de Muy Grave.
 - La clase "ApiExamples.Controllers" es la que mas aporta architecture smells con 3,92 unidades de smell por KLOC. Y entra en la categoria de Muy Grave.
 - Por ultimo la clase "UnitTest" aporta una cantidad normal de architecture smells con 0,34 unidades de smell por KLOC. Y entra en la categoria de Normal.
@@ -36,12 +36,13 @@
 ## Analisis Manual
 - **Arquitectura**: El proyecto principal cuenta con arquitectura de MVC pero las otras bibliotecas no cuentan con una arquitectura clara o al menos bien organizada y lo cual puede involucionar en una Gran Bola de Lodo.
 	- Nota extra: En el proyecto base ya hay Issues que hablan de la necesidad de mejor rendimiento y velocidad, lo cual indica una arquitectura no optima ni escalable.
-- **DocumentaciÛn**: No se cuenta con una documentaciÛn tÈcnica que explique la arquitectura del proyecto y como se puede extender, modificar o desplegarlo. Ademas hay clases que no cuentan con documentaciÛn de su proposito y uso.
-	- Ejemplo: Stuff.cs, esta clase pareciera como si fuera basura pero es dificil determinar su proposito sin documentaciÛn.
+- **Documentaci√≥n**: No se cuenta con una documentaci√≥n t√©cnica que explique la arquitectura del proyecto y como se puede extender, modificar o desplegarlo. Ademas hay clases que no cuentan con documentaci√≥n de su proposito y uso.
+	- Ejemplo: Stuff.cs, esta clase pareciera como si fuera basura pero es dificil determinar su proposito sin documentaci√≥n.
 - **Recomendaciones**: Se propone reorganizar las bibliotecas y clases para que sigan una arquitectura clara y escalable. 
 	- **Mejoras Propuestas**: Se propone usar una arquitectura Basada en Capas, la cual divide el proyecto en capas por funcionalidad y responsabilidad. Se recomienda no seguir usando la arquitectura MVC y cambiar por otra que permita una mejor escalabilidad y rendimiento.
 
 ## Conclusiones
-- **Designite** es una herramienta muy util para detectar code smells y architecture smells en un proyecto de C#. Limitaciones de la herramienta son que no detecta todos los problemas y no da una soluciÛn a los problemas detectados. Por ejemplo no analiza la organizaciÛn de los proyectos, especialmente los nombres de archivos, namepaces la orgnizaciÛn de carpeta.
-	- La limitaciÛn mas grande es que sus lecturas las hace a partir de una arquitectura ideal que puede o no ser usada en el proyecto. Por ejemplo, esta de ser una aplicacion nativa de nube tendria problemas analizando y haciendo recomendaciones utiles sobre esta arquitectura poco utilizada.
-	- Es una herramienta util pero todavia bastante dependiente de la interpretaciÛn humana y factores mas subjetivos como la organizaciÛn de los proyectos y las malas practicas.
+- **Designite** es una herramienta muy util para detectar code smells y architecture smells en un proyecto de C#. Limitaciones de la herramienta son que no detecta todos los problemas y no da una soluci√≥n a los problemas detectados. Por ejemplo no analiza la organizaci√≥n de los proyectos, especialmente los nombres de archivos, namepaces la orgnizaci√≥n de carpeta.
+	- La limitaci√≥n mas grande es que sus lecturas las hace a partir de una arquitectura ideal que puede o no ser usada en el proyecto. Por ejemplo, esta de ser una aplicacion nativa de nube tendria problemas analizando y haciendo recomendaciones utiles sobre esta arquitectura poco utilizada.
+	- Es una herramienta util pero todavia bastante dependiente de la interpretaci√≥n humana y factores mas subjetivos como la organizaci√≥n de los proyectos y las malas practicas.
+

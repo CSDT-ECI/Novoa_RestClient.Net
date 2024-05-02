@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Análisis de Deuda de Arquitectura</title>
+    <title>Anï¿½lisis de Deuda de Arquitectura</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -36,7 +36,7 @@
             }
 
                 ul li:before {
-                    content: "•";
+                    content: "ï¿½";
                     color: #0056b3;
                     font-weight: bold;
                     display: inline-block;
@@ -65,9 +65,9 @@
     </style>
 </head>
 <body>
-    <h1>Análisis de Deuda de Arquitectura</h1>
+    <h1>Anï¿½lisis de Deuda de Arquitectura</h1>
 
-    <h2>Análisis general usando Designite para C#</h2>
+    <h2>Anï¿½lisis general usando Designite para C#</h2>
     <ul>
         <li><strong>Lineas de codigo analizadas</strong>: 8935</li>
         <li><strong>Numero de Tipos</strong>: 133</li>
@@ -101,23 +101,23 @@
         <li>
             <strong>Feature Concentration</strong>: 4
             <ul>
-                <li>La herramienta detectó el problema en este componente porque el componente realiza más de una preocupación/característica arquitectónica.</li>
+                <li>La herramienta detectï¿½ el problema en este componente porque el componente realiza mï¿½s de una preocupaciï¿½n/caracterï¿½stica arquitectï¿½nica.</li>
             </ul>
         </li>
     </ul>
 
-    <h2>Otras métricas detectadas por Designite</h2>
-    <p>Hay un namespace duplicado llamado "RestClient.net" sin una distinción aparente de su propósito. Otra herramienta de Estructura de matrices de dependencias detectó 5 repeticiones del mismo namespace, lo cual hace difícil de leer y apartar los resultados.</p>
-    <p>Los dos RestClients aportan una gran cantidad de architecture smells con 1,34 y 1,44 unidades de smell por KLOC. Y entran en la categoría de Muy Grave.</p>
-    <p>La clase "ApiExamples.Controllers" es la que más aporta architecture smells con 3,92 unidades de smell por KLOC. Y entra en la categoría de Muy Grave.</p>
-    <p>Por último la clase "UnitTest" aporta una cantidad normal de architecture smells con 0,34 unidades de smell por KLOC. Y entra en la categoría de Normal.</p>
-    <p>Al organizarse por proyecto, Abstractions tiene 39 dependencias con el proyecto RestClient.Net y 65 con el proyecto de UnitTests. Esto no es necesariamente malo, solo que puede ser síntoma de gran acoplamiento entre los proyectos.</p>
+    <h2>Otras mï¿½tricas detectadas por Designite</h2>
+    <p>Hay un namespace duplicado llamado "RestClient.net" sin una distinciï¿½n aparente de su propï¿½sito. Otra herramienta de Estructura de matrices de dependencias detectï¿½ 5 repeticiones del mismo namespace, lo cual hace difï¿½cil de leer y apartar los resultados.</p>
+    <p>Los dos RestClients aportan una gran cantidad de architecture smells con 1,34 y 1,44 unidades de smell por KLOC. Y entran en la categorï¿½a de Muy Grave.</p>
+    <p>La clase "ApiExamples.Controllers" es la que mï¿½s aporta architecture smells con 3,92 unidades de smell por KLOC. Y entra en la categorï¿½a de Muy Grave.</p>
+    <p>Por ï¿½ltimo la clase "UnitTest" aporta una cantidad normal de architecture smells con 0,34 unidades de smell por KLOC. Y entra en la categorï¿½a de Normal.</p>
+    <p>Al organizarse por proyecto, Abstractions tiene 39 dependencias con el proyecto RestClient.Net y 65 con el proyecto de UnitTests. Esto no es necesariamente malo, solo que puede ser sï¿½ntoma de gran acoplamiento entre los proyectos.</p>
 
-    <h2>Análisis Manual</h2>
+    <h2>Anï¿½lisis Manual</h2>
     <p><strong>Arquitectura</strong>: El proyecto principal cuenta con arquitectura de MVC pero las otras bibliotecas no cuentan con una arquitectura clara o al menos bien organizada y lo cual puede involucionar en una Gran Bola de Lodo.</p>
-    <p>Nota extra: En el proyecto base ya hay Issues que hablan de la necesidad de mejor rendimiento y velocidad, lo cual indica una arquitectura no óptima ni escalable.</p>
-    <p><strong>Documentación</strong>: No se cuenta con una documentación técnica que explique la arquitectura del proyecto y como se puede extender, modificar o desplegarlo. Además hay clases que no cuentan con documentación de su propósito y uso.</p>
-    <p>Ejemplo: Stuff.cs, esta clase pareciera como si fuera basura pero es difícil determinar su propósito sin documentación.</p>
+    <p>Nota extra: En el proyecto base ya hay Issues que hablan de la necesidad de mejor rendimiento y velocidad, lo cual indica una arquitectura no ï¿½ptima ni escalable.</p>
+    <p><strong>Documentaciï¿½n</strong>: No se cuenta con una documentaciï¿½n tï¿½cnica que explique la arquitectura del proyecto y como se puede extender, modificar o desplegarlo. Ademï¿½s hay clases que no cuentan con documentaciï¿½n de su propï¿½sito y uso.</p>
+    <p>Ejemplo: Stuff.cs, esta clase pareciera como si fuera basura pero es difï¿½cil determinar su propï¿½sito sin documentaciï¿½n.</p>
     <p>
         <strong>Recomendaciones</strong>: Se propone reorganizar las bibliotecas y clases para que sigan una arquitectura clara y escalable.
         <ul>
@@ -127,29 +127,29 @@
 
     <h2>Conclusiones</h2>
 
-    <p><strong>Designite</strong> es una herramienta muy útil para detectar code smells y architecture smells en un proyecto de C#. Limitaciones de la herramienta son que no detecta todos los problemas y no da una solución a los problemas detectados. Por ejemplo no analiza la organización de los proyectos, especialmente los nombres de archivos, namespaces la organización de carpeta.</p>
-    <p>La limitación mas grande es que sus lecturas las hace a partir de una arquitectura ideal que puede o no ser usada en el proyecto. Por ejemplo, esta de ser una aplicacion nativa de nube tendria problemas analizando y haciendo recomendaciones utiles sobre esta arquitectura poco utilizada.</p>
-    <p>Es una herramienta util pero todavia bastante dependiente de la interpretación humana y factores mas subjetivos como la organización de los proyectos y las malas practicas.</p>
+    <p><strong>Designite</strong> es una herramienta muy ï¿½til para detectar code smells y architecture smells en un proyecto de C#. Limitaciones de la herramienta son que no detecta todos los problemas y no da una soluciï¿½n a los problemas detectados. Por ejemplo no analiza la organizaciï¿½n de los proyectos, especialmente los nombres de archivos, namespaces la organizaciï¿½n de carpeta.</p>
+    <p>La limitaciï¿½n mas grande es que sus lecturas las hace a partir de una arquitectura ideal que puede o no ser usada en el proyecto. Por ejemplo, esta de ser una aplicacion nativa de nube tendria problemas analizando y haciendo recomendaciones utiles sobre esta arquitectura poco utilizada.</p>
+    <p>Es una herramienta util pero todavia bastante dependiente de la interpretaciï¿½n humana y factores mas subjetivos como la organizaciï¿½n de los proyectos y las malas practicas.</p>
 
-    <h1>Análisis de Calidad del Código y Recomendaciones</h1>
+    <h1>Anï¿½lisis de Calidad del Cï¿½digo y Recomendaciones</h1>
 
     <h2>Resultados de SonarQube</h2>
     <ul>
         <li><strong>Code Smells</strong>: 49</li>
-        <li><strong>Complejidad Ciclomática</strong>: 307</li>
+        <li><strong>Complejidad Ciclomï¿½tica</strong>: 307</li>
         <li><strong>Complejidad Cognitiva</strong>: 119</li>
-        <li><strong>Deuda Técnica diagnosticada</strong>: 3h 34min</li>
+        <li><strong>Deuda Tï¿½cnica diagnosticada</strong>: 3h 34min</li>
         <li><strong>Duplicaciones</strong>: 0%</li>
         <li><strong>Cobertura de pruebas</strong>: 0%</li>
         <li><strong>Ratio de deuda</strong>: 0.5% A</li>
-        <li>Se sugiere dividir 2 clases para mejorar la legibilidad del código.</li>
-        <li>En promedio, el 11% del código son comentarios.</li>
+        <li>Se sugiere dividir 2 clases para mejorar la legibilidad del cï¿½digo.</li>
+        <li>En promedio, el 11% del cï¿½digo son comentarios.</li>
         <li>Hay una cantidad significativa de TODOs sin resolver.</li>
         <li>
-            Problemas detectados en el código:
+            Problemas detectados en el cï¿½digo:
             <ul>
                 <li><strong>Bloqueantes</strong>: 1</li>
-                <li><strong>Críticos</strong>: 2</li>
+                <li><strong>Crï¿½ticos</strong>: 2</li>
                 <li><strong>Mayores</strong>: 39</li>
                 <li><strong>Menores</strong>: 4</li>
                 <li><strong>Informativos</strong>: 3</li>
@@ -169,15 +169,15 @@
     <h2>Resultados de Github Copilot Chat</h2>
     <ul>
         <li>
-            Se detectó uso Excesivo de desactivación de advertencias relacionadas con diferentes code smells
+            Se detectï¿½ uso Excesivo de desactivaciï¿½n de advertencias relacionadas con diferentes code smells
             <ul>
                 <li><strong>Nombramiento de variables</strong>: Se relacionan con la nomenclatura de las variables.</li>
-                <li><strong>Inicialización de variables</strong>: Se relacionan con la no inicialización de las variables no nulas.</li>
+                <li><strong>Inicializaciï¿½n de variables</strong>: Se relacionan con la no inicializaciï¿½n de las variables no nulas.</li>
                 <li><strong>Correcto uso de los tipos de datos</strong>: Se relacionan con el uso correcto de los tipos.</li>
             </ul>
         </li>
-        <li>Se detectó caso omiso deliberadamente a las advertencias del IDE, incluso cuando estas están marcadas como errores.</li>
-        <li>Se detectó una clase Dios, la cual tiene una cantidad excesiva de métodos y atributos, alrededor de 350 líneas de código para la clase principal.</li>
+        <li>Se detectï¿½ caso omiso deliberadamente a las advertencias del IDE, incluso cuando estas estï¿½n marcadas como errores.</li>
+        <li>Se detectï¿½ una clase Dios, la cual tiene una cantidad excesiva de mï¿½todos y atributos, alrededor de 350 lï¿½neas de cï¿½digo para la clase principal.</li>
     </ul>
 
     <h2>Resultados de Visual Studio</h2>
@@ -185,13 +185,13 @@
         <li><strong>Advertencias</strong>: 67</li>
         <li><strong>Errores</strong>: 37</li>
         <li><strong>Mensajes</strong>: 3</li>
-        <li>El limpiador y formateador automático de código modificó 3 archivos.</li>
-        <li>En vez de lanzar excepciones más específicas, se lanzan excepciones generales.</li>
-        <li>Se detectó uso excesivo de desactivación de advertencias relacionadas con diferentes code smells.</li>
-        <li>Se desactivan advertencias en lugares donde no se podrían generar esos errores indicados por las advertencias.</li>
-        <li>Se detectó caso omiso deliberadamente a las advertencias del IDE, incluso cuando estas están marcadas como errores.</li>
-        <li>Falta de organización en los controladores donde las acciones no están agrupadas por funcionalidad [Get, Post, Get?]</li>
-        <li>Se detectó mucho código que no se está utilizando en el proyecto.</li>
+        <li>El limpiador y formateador automï¿½tico de cï¿½digo modificï¿½ 3 archivos.</li>
+        <li>En vez de lanzar excepciones mï¿½s especï¿½ficas, se lanzan excepciones generales.</li>
+        <li>Se detectï¿½ uso excesivo de desactivaciï¿½n de advertencias relacionadas con diferentes code smells.</li>
+        <li>Se desactivan advertencias en lugares donde no se podrï¿½an generar esos errores indicados por las advertencias.</li>
+        <li>Se detectï¿½ caso omiso deliberadamente a las advertencias del IDE, incluso cuando estas estï¿½n marcadas como errores.</li>
+        <li>Falta de organizaciï¿½n en los controladores donde las acciones no estï¿½n agrupadas por funcionalidad [Get, Post, Get?]</li>
+        <li>Se detectï¿½ mucho cï¿½digo que no se estï¿½ utilizando en el proyecto.</li>
     </ul>
 
     <h2>Resultados de Snyk.io (Vulnerabilidades)</h2>
@@ -213,22 +213,22 @@
     <h2>Resultados de Pruebas Manuales</h2>
     <ul>
         <li>
-            La instalación del proyecto presenta gran complejidad.
+            La instalaciï¿½n del proyecto presenta gran complejidad.
             <ul>
                 <li>Vulnerabilidad de alto riesgo en Newtonsoft.Json.</li>
-                <li>Discrepancias en las versiones de librerías instaladas.</li>
+                <li>Discrepancias en las versiones de librerï¿½as instaladas.</li>
                 <li>Compatibilidad solo con versiones descontinuadas de .NET Core (2.0 y 4.5).</li>
                 <li>Falta de compatibilidad con versiones de .NET Core superiores a la 7.</li>
             </ul>
         </li>
         <li>
-            Falta de buenas prácticas.
+            Falta de buenas prï¿½cticas.
             <ul>
-                <li>Insuficiente documentación y comentarios en el código.</li>
+                <li>Insuficiente documentaciï¿½n y comentarios en el cï¿½digo.</li>
                 <li>Pruebas unitarias existentes no son detectadas.</li>
-                <li>Desorganización en el proyecto de pruebas.</li>
-                <li>Se detectó TODOs sin resolver.</li>
-                <li>Hay poco uso de carpetas para organizar y agrupar el código.</li>
+                <li>Desorganizaciï¿½n en el proyecto de pruebas.</li>
+                <li>Se detectï¿½ TODOs sin resolver.</li>
+                <li>Hay poco uso de carpetas para organizar y agrupar el cï¿½digo.</li>
                 <li>Los namespaces no corresponden a la estructura de carpetas y la advertencia se suprime.</li>
                 <li>La arquitectura Modelo Vista Controlador solo se aplica en ciertas partes del proyecto.</li>
                 <li>
@@ -236,7 +236,7 @@
                     <ul>
                         <li>//Note: not sure why this is necessary...</li>
                         <li>RestClient.Net/DefaultGetHttpRequestMessage.cs Linea 69.</li>
-                        <li>Clase llamada "Stuff.cs" con ningún comentario que la explique.</li>
+                        <li>Clase llamada "Stuff.cs" con ningï¿½n comentario que la explique.</li>
                         <li>//Is this good?</li>
                         <li>RestClient.Net.Abstractions/CallExtensions.cs Linea 66</li>
                     </ul>
@@ -247,16 +247,16 @@
 
     <h2>Recomendaciones</h2>
     <ul>
-        <li><strong>Refactorización</strong>: Priorizar la resolución de los problemas bloqueantes y críticos. Considerar dividir las clases sugeridas para mejorar la legibilidad.</li>
-        <li><strong>Negligencia de advertencias</strong>: Revisar y corregir las advertencias desactivadas en el código. Asegurarse de que no se estén ignorando problemas importantes especialmente si el mismo IDE las marca.</li>
-        <li><strong>Documentación</strong>: Aumentar la cantidad de comentarios en el código, especialmente en partes complejas y para TODOs importantes.</li>
+        <li><strong>Refactorizaciï¿½n</strong>: Priorizar la resoluciï¿½n de los problemas bloqueantes y crï¿½ticos. Considerar dividir las clases sugeridas para mejorar la legibilidad.</li>
+        <li><strong>Negligencia de advertencias</strong>: Revisar y corregir las advertencias desactivadas en el cï¿½digo. Asegurarse de que no se estï¿½n ignorando problemas importantes especialmente si el mismo IDE las marca.</li>
+        <li><strong>Documentaciï¿½n</strong>: Aumentar la cantidad de comentarios en el cï¿½digo, especialmente en partes complejas y para TODOs importantes.</li>
         <li><strong>Pruebas</strong>: Mejorar la cobertura de pruebas automatizadas. Reorganizar y optimizar el proyecto de pruebas para asegurar su efectividad.</li>
-        <li><strong>Dependencias</strong>: Actualizar o reemplazar la librería Newtonsoft.Json por una versión sin vulnerabilidades conocidas. Unificar versiones de librerías para evitar conflictos.</li>
+        <li><strong>Dependencias</strong>: Actualizar o reemplazar la librerï¿½a Newtonsoft.Json por una versiï¿½n sin vulnerabilidades conocidas. Unificar versiones de librerï¿½as para evitar conflictos.</li>
         <li><strong>Compatibilidad</strong>: Asegurar la compatibilidad del proyecto con versiones recientes de .NET Core para garantizar seguridad y soporte a largo plazo.</li>
-        <li><strong>Organización</strong>: Organizar los controladores de acuerdo a su funcionalidad y agrupar las acciones por tipo de solicitud HTTP.</li>
-        <li><strong>Eliminación de código no utilizado</strong>: Eliminar el código que no se está utilizando en el proyecto o que no esté referenciado por otros componentes.</li>
-        <li><strong>Descontinuar soporte de versiones antiguas</strong>: Eliminar soporte para versiones de .NET Core descontinuadas y migrar a versiones más recientes para aprovechar mejoras y correcciones de errores además de limpiar el proyecto.</li>
-        <li><strong>Agrupación de código</strong>: Organizar el código en carpetas y agrupar por funcionalidad para facilitar la lectura y mantenimiento del código.</li>
+        <li><strong>Organizaciï¿½n</strong>: Organizar los controladores de acuerdo a su funcionalidad y agrupar las acciones por tipo de solicitud HTTP.</li>
+        <li><strong>Eliminaciï¿½n de cï¿½digo no utilizado</strong>: Eliminar el cï¿½digo que no se estï¿½ utilizando en el proyecto o que no estï¿½ referenciado por otros componentes.</li>
+        <li><strong>Descontinuar soporte de versiones antiguas</strong>: Eliminar soporte para versiones de .NET Core descontinuadas y migrar a versiones mï¿½s recientes para aprovechar mejoras y correcciones de errores ademï¿½s de limpiar el proyecto.</li>
+        <li><strong>Agrupaciï¿½n de cï¿½digo</strong>: Organizar el cï¿½digo en carpetas y agrupar por funcionalidad para facilitar la lectura y mantenimiento del cï¿½digo.</li>
         <li><strong>Pruebas unitarias</strong>: Asegurarse de que las pruebas unitarias se puedan ejecutar correctamente pues no importa si hay cobertura del 100% si no se pueden ejecutar.</li>
     </ul>
 </body>
